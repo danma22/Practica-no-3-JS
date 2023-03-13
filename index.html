@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="home">
+        <!-- navbar -->
+        <nav id="nav">
+            <div class = "nav-center">
+                <!-- nav header -->
+                <div class="nav-header">
+                    <img src="imgs/logo.png" class="logo" alt="logo">
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <!-- links -->
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                            <a href="#home" class="scroll-link">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scroll-link">Acerca de mi</a>
+                        </li>
+                        <li>
+                            <a href="#curriculum" class="scroll-link">Curriculum</a>
+                        </li>
+                        <li>
+                            <a href="#multimedia" class="scroll-link">Multimedia</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="scroll-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class = "banner">
+            <div class = "container">
+                <h1>¡Hola!, soy Daniel Macias</h1>
+                <h2>Desarrollador FullStack</h2>
+                <p>
+                    Explora mi sitio, y conoce abiertamente mi lado profesional. Pondre mi experiencia
+                    al servicio de tus ideas. 
+                </p>
+                <a href="#about" class="scroll-link btn btn-white">explorar proyectos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- about -->
+    <section id="about" class="section">
+        <div class="title">
+            <h2>Acerca de <span>mí</span></h2>
+        </div>
+
+        <div id = "aboutContainer">
+            <div class = "col-left">
+                <h2>Mi profesión es el desarrollo web</h2>
+                <p>Con múltiples años de experiencia, he creado y fundamentado una carrera dentro del mundo del desarrollo.
+                    Cuenta con un título de ingniero en tecnologías de la información; por lo que tengo conocimiento general
+                    de las múltiples necesidades tecnológicas que necesita la gente, enfocándome exclusivamente en la creación de
+                    sitios online. Con mucho esfuerzo y dedicación a mi trabajo, estaré encantado de presentarte mis ideas y propuestas en este sitio.
+                </p>
+            </div>
+            <div class = "col-right">
+                <div class="about-img">
+                    <img src="imgs/me.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- curriculum -->
+    <section id="curriculum" class="section">
+        <div class="title">
+            <h2>Mi <span>Curriculum</span></h2>
+        </div>
+
+        <div id = "card1" class='cards'>
+            <div class = "col-left">
+                <h2>Proyecto: Estudio fotográfico</h2>
+                <p>Un estudio de fotografía necesitaba de un sitio online para mostrar su trabajo
+                    al mundo entero. Necesitaban no solo mostrar su contenido, sino un sistema para 
+                    agendar todos aquellos trabajos en los que se les fuera requiriendo.
+                </p>
+            </div>
+            <div class = "col-right">
+            </div>
+        </div>
+
+        <div id = "card2" class='cards'>
+            <div class = "col-left">
+                <h2>Proyecto: Sistema administrativo de tienda</h2>
+                <p>Con el afan de tener un control sobre los recursos que se manejan, una tienda
+                    decidió encomendarnos la tarea de realizar el sistema acorde a su pequeña linea
+                    de productos
+                </p>
+            </div>
+            <div class = "col-right">
+            </div>
+        </div>
+
+        <div id = "card3" class='cards'>
+            <div class = "col-left">
+                <h2>Proyecto: Sistema administrativo de proveedor</h2>
+                <p>Para este proyecto era imprescindible tener en claro las distintas formas en 
+                    las que un proveedor interactua con su clientela. Para facilitar el trabajo más
+                    laborioso de este proceso logístico, se creo este sistema.
+                </p>
+            </div>
+            <div class = "col-right">
+            </div>
+        </div>
+    </section>
+
+    <!-- multimedia -->
+    <section id="multimedia" class="section">
+        <div class="title">
+            <h2>Mi <span>Multimedia</span></h2>
+        </div>
+
+        <div id = "videoCard" class='videoMultimedia'>
+            <div class = "col-left">
+                <h2>Mi experiencia compartida</h2>
+                <p>En mi afán de compartir lo que sé con las personas, tengo un canal de youtube donde subo
+                    contenido creado por mí: da click <a href="https://www.youtube.com/@danielmacias2074">aquí </a> para ir a mi canal
+                </p>
+            </div>
+            <div class = "col-right">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Y59cKkIunRQ" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="section" style="padding-top: 10px;">
+        <div class="title">
+            <h2>Contacta <span>conmigo</span></h2>
+        </div>
+
+        <div id = "contactContainer">
+            <div class = "col-left">
+                <h2>Contacta conmigo para hablar la idea que tengas</h2>
+                <p>Solo llena el formulario y espera mi contestación
+                </p>
+            </div>
+            <div class = "col-right">
+                <form>
+                    <div class="input">
+                        <label for="email">Correo</label>
+                        <input type="email" id="email" placeholder="Escribe tu correo">
+                    </div>
+                    <div class="input">
+                        <label for="desc">Descripción</label>
+                        <input type="text" id="desc" placeholder="Escribe tu correo">
+                    </div>
+                    <input type="submit" id="enviar" value="Envia tu duda">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="section">
+        <p>
+            copyright &copy; UPV - Programación Web
+            <span id="data"></span>. all rights reserved
+        </p>
+    </footer>
+    <a class="scroll-link top-link" href="#home">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- javascript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
